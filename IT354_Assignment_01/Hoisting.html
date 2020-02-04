@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment 1</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:#008F7A">
+<div class="jumbotron text-center" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1>Chris Halikias</h1>
+    <p>IT 354 Spring 2020</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Assignment 1</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="Main.html">Value and types</a></li>
+                <li><a href="UnaryOps.html">Unary Operators</a></li>
+                <li class="active"><a href="Hoisting.html">Hoisting</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-8" style="background-color:#845EC2">
+            <h2 id="ArticleText">Hoisting</h2>
+            <p id="regText">In JavaScript a variable can be declared after it has been used.
+            This concept is known as hoisting which is JavaScripts default
+                behavior of moving all declarations to the top of the current
+            scope (in other words to the top of the current script or the
+                current function).</p>
+            <p id="regText"> Here is a basic example of hoisting with the output being
+            on the right.</p>
+            <img src="Images/Pic1_hoist.PNG" alt="hoisting">
+            <br>
+            <p id="regText">Another thing to note about Hoisting is that it does not work
+            with variables declared with the key words let or const are not
+            hoisted. However JavaScript only hoists declarations and not
+            initializations. The next two examples show this difference.</p>
+            <img src="Images/Pic2_hoist.PNG" alt="hoisting">
+            <img src="Images/Pic3_hoist.PNG" alt="hoisting">
+            <p id="regText">As you can see hoisting does not work in the third picture
+            because of the positions of the initialization of the variables.
+            Because the declaration (vary y) and not the initialization (=7)
+            gets put up on top. Since y is initialized and cannot be hoisted,
+            it is undefined. Hoisting is often overlooked behavior in JavaScript
+            by developers. To avoid the bugs that come from hoisting one should
+            always declare variables at the beginning of every scope.</p>
+            <br>
+            <h2 id="ArticleText">Hoisting video tutorial</h2>
+            <p id="regText">In case the video doesn't work, here is the <a href="https://youtu.be/0w7QSmO_Y5k">link</a></p>
+            <iframe width="420" height="315" src="https://youtube.com/embed/0w7QSmO_Y5k"></iframe>
+
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0; background-color:#0089BA">
+    <p>Footer</p>
+</div>
+
+</body>
+</html>
