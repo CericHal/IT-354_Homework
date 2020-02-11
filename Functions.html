@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Assignment2: Functions</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#nameFunc">Named Function<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#funcExp">Function Expression</a>
+            <a class="nav-item nav-link" href="#ArrowFunction">Arrow Function</a>
+            <a class="nav-item nav-link" href="#OpsArg">Optional Argument</a>
+            <a class="nav-item nav-link" href="#restPar">Rest Parameter</a>
+            <a class="nav-item nav-link" href="#scope">Scope</a>
+            <a class="nav-item nav-link" href="#nestFunc">Nested Function</a>
+            <a class="nav-item nav-link" href="#ECMA">History of EMCA</a>
+
+        </div>
+    </div>
+</nav>
+<div class="container AlternateColor mt-5 mb-5 shadow rounded">
+    <br>
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8 pt-sm-1" id="nameFunc">
+            <h2 id="ArticleText">Functions</h2>
+            <hr class="my-3">
+            <p id="regText">So what is a JavaScript Function? Well to put it simply, it
+            is a block of code designed to perform a particular task. They can
+                also take in variables, called arguements, and use them in their
+                calculations. We will talk about 3 particular ways you can code these functions. Then
+                we will discuss other topics related to functions such as Optional Arguments,
+                Rest Parameters, Scope, Nested Functions, and the history of EMCAScript
+                The first, is <b>Named Function.</b></p>
+            <h2 id="ArticleText">Named Function</h2>
+            <hr class="my-4">
+            <p id="regText">The named function, is pretty self explanatory
+            as it is a function with a name. They are not executed immediately
+            however, only when they are called like at the bottom of this example.</p>
+            <div class="text-center">
+                <img src="Image2/Named_Function.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="funcExp">
+            <h2 id="ArticleText">Function Expressions</h2>
+            <hr class="my-3">
+            <p id="regText">Next up are <b>Function Expressions,</b>which can be
+            stored as variable to be used at your leisure. This makes it easier
+            to store values produced by functions if you have to use them in other
+            functions</p>
+            <div class="text-center">
+                <img src="Image2/FunctionExpression.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="ArrowFunction">
+            <h2 id="ArticleText">Arrow Functions</h2>
+            <hr class="my-3">
+            <p id="regText">The last function we are going to talk about is the <b>Arrow
+            Function.</b> This allows us to write shorter function syntax wise.
+                Here are some examples below.</p>
+            <div class="text-center">
+                <img src="Image2/ArrowFunction.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="funcVid1">
+            <h2 id="ArticleText">Video tutorial part 1</h2>
+            <hr class="my-3">
+            <p id="regText">This video is a tutorial on the 3 topics previously mentioned.</p>
+            <div class="iframe-container text-center">
+                <iframe src="https://youtube.com/embed/6XhiJ6h_kL0" allowfullscreen></iframe>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="OpsArg">
+            <h2 id="ArticleText">Optional Arguments</h2>
+            <hr class="my-3">
+            <p id="regText">So here's a question, what happens when you give a
+            function too many or not enough arguments? Well it ignores extra
+            arguments and if you don't pass enough then the missing ones
+            remain undefined. Try to use a undefined argument in a function
+            and it will not work. If you don't use it, then the function
+            will work without issue.</p>
+            <div class="text-center">
+                <img src="Image2/OpsArg.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="restPar">
+            <h2 id="ArticleText">Rest Parameter</h2>
+            <hr class="my-3">
+            <p id="regText">Rest parameter is an improved way to handle function
+            parameters which allow us to represent an indefinite number of arguments
+            as an array. In other words, by putting a <b>...</b> in front of one
+            parameter, one can enter as many arguments they want. Below is a
+            example to explain the syntax more.</p>
+            <div class="text-center">
+                <img src="Image2/RestParam2.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="scope">
+            <h2 id="ArticleText">Scope</h2>
+            <hr class="my-3">
+            <p id="regText">Scope determines the accessibility of variables in code
+            and each function creates its own scope. Variables defined within functions
+            cannot be accessed outside the function. There are two kinds of scope,
+            variables declared inside the function are in the local scope, while
+            variables declared outside the function are in the global scope. Let's
+            take a look at the example below.</p>
+            <div class="text-center">
+                <img src="Image2/Scope.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="nestFunc">
+            <h2 id="ArticleText">Nested functions</h2>
+            <hr class="my-3">
+            <p id="regText">Hey dawg I heard you like functions so I put a function
+            in your function. Lame joke aside, you can also have functions within
+            a function. As for the scope, the outer function can't see inside the
+            function, but the inner function can see the outer function. Let's take
+            a look at the example below</p>
+            <div class="text-center">
+                <img src="Image2/NestFunc.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="funcVid1">
+            <h2 id="ArticleText">Video tutorial part 2</h2>
+            <hr class="my-3">
+            <p id="regText">This video is a tutorial optional arguments,
+            rest parameters, scope, and nested functions.</p>
+            <div class="iframe-container text-center">
+                <iframe src="https://youtube.com/embed/RP8xb9ao8vk" allowfullscreen></iframe>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+   <br>
+    <div class="row">
+        <div class="col-sm-2 bg-dark"></div>
+        <div class="col-sm-8 pt-sm-2 bg-dark text-light" id="ECMA">
+            <h2 id="ArticleText">ECMAScript: A history</h2>
+            <hr class="my-3">
+            <div class="text-center">
+            <p id="regText">ECMAScript is the scripting language that forms the basis of JavaScript. See JavaScript was developed for the browser Netscape 2 in 1996 by Brenden Eich, considered to be the father of JavaScript, who came into the picture when he was contracted by NetScape communications to create the first version of JavaScript. This is where ECMA comes in, ECMA is an industry association whose purpose is to standardize information and communication systems. ECMA began work on standardizing JavaScript in November of 1996, not even a year since the programming language came out. What was produced as a result is ECMAScript, which today is commonly known today as JavaScript. ECMAScript 1 and 2 still missed a lot of important features like JSON, exceptions and methods for builtin methods. Version 1 was released in June of 1997. Version 2 was released in June of 1998 and was mainly editorial changes. Version 3 had the first big changes, including regular expressions, the do-while block, the try/catch blocks, the in and instance of operators, and built-in functions for strings and arrays. This version was released in December of 1999. ECMAScript 4 was never released mainly because the committee couldn’t agree on whether or not to add much more features to the standard. In peak development, some of the features were classes, interfaces, and much, much more. ECMAScript 5, released in 2009, added JSON support, new array methods, and object methods. It was considered to be a rather modest update compared to version 3. Version 6, otherwise referred to as ECMAScript 2015, added the let and const, default parameter values, Array.find(), and Array.findIndex(). This version aimed to make JavaScript more appealing to a larger audience, so it could be used by small startups to industry giants alike. ECMAScript 7 (2016) contained mainly small revisions to the previous version and adding things like the exponentiation operator and Array.prototype.includes. It was the result of a new release process by the developers, where new proposals must go through a 4 stage process. So when enough proposals reach stage 4, a new version can be released and if they don’t reach stage 4, it doesn’t hinder development at all. Helping to prevent what happened to version 4. Since then, two new versions have been released, with the most recent being ECMAScript version 9 as of 2019.
+            </p>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2 bg-dark"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Chris Halikias</h5>
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Values.html" class="text-light">Assignment1</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Functions.html" class="text-light">Assignment2</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links used</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://auth0.com/blog/a-brief-history-of-javascript/#ECMAScript--JavaScript-as-a-standard" class="text-light">
+                            Auth0.com
+                        </a>
+                    </li>
+                    <li>
+                        <p><a href="https://www.w3schools.com/js/js_versions.asp" class="text-light">W3Schools.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">© 2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

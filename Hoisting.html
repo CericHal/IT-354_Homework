@@ -5,44 +5,41 @@
     <title>Assigment 1</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </head>
-<body style="background-color:#008F7A">
-<div class="jumbotron text-center" style="margin-bottom:0; background-color:#2C73D2";>
-    <h1>Chris Halikias</h1>
-    <p>IT 354 Spring 2020</p>
+<body>
+<div class="jumbotron jumbotron-fluid" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Assignment1: Hoisting</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
 </div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Assignment 1</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="Main.html">Value and types</a></li>
-                <li><a href="UnaryOps.html">Unary Operators</a></li>
-                <li class="active"><a href="Hoisting.html">Hoisting</a></li>
-            </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="Values.html">Value and Types<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="UnaryOps.html">Unary Operators</a>
+            <a class="nav-item nav-link active" href="Hoisting.html">Hoisting</a>
         </div>
     </div>
 </nav>
 
-<div class="container">
+<div class="container AlternateColor mt-5 mb-5 shadow rounded">
+    <br>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-2">
 
         </div>
         <div class="col-sm-8">
             <h2 id="ArticleText">Hoisting</h2>
+            <hr class="my-3">
             <p id="regText">In JavaScript a variable can be declared after it has been used.
             This concept is known as hoisting which is JavaScripts default
                 behavior of moving all declarations to the top of the current
@@ -50,14 +47,18 @@
                 current function).</p>
             <p id="regText"> Here is a basic example of hoisting with the output being
             on the right.</p>
-            <img src="Images/Pic1_hoist.PNG" alt="hoisting">
+            <div class="text-center">
+                <img src="Images/Pic1_hoist.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
             <br>
             <p id="regText">Another thing to note about Hoisting is that it does not work
             with variables declared with the key words let or const are not
             hoisted. However JavaScript only hoists declarations and not
             initializations. The next two examples show this difference.</p>
-            <img src="Images/Pic2_hoist.PNG" alt="hoisting">
-            <img src="Images/Pic3_hoist.PNG" alt="hoisting">
+            <div class="text-center">
+                <img src="Images/Pic2_hoist.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+                <img src="Images/Pic3_hoist.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
             <p id="regText">As you can see hoisting does not work in the third picture
             because of the positions of the initialization of the variables.
             Because the declaration (vary y) and not the initialization (=7)
@@ -67,16 +68,65 @@
             always declare variables at the beginning of every scope.</p>
             <br>
             <h2 id="ArticleText">Hoisting video tutorial</h2>
-            <p id="regText">In case the video doesn't work, here is the <a href="https://youtu.be/0w7QSmO_Y5k">link</a></p>
-            <iframe width="420" height="315" src="https://youtube.com/embed/0w7QSmO_Y5k"></iframe>
-
+            <hr class="my-3">
+            <div class="iframe-container text-center">
+                <iframe src="https://youtube.com/embed/0w7QSmO_Y5k" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
         </div>
+        <div class="col-sm-2"></div>
     </div>
 </div>
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Chris Halikias</h5>
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Values.html" class="text-light">Assignment1</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Functions.html" class="text-light">Assignment2</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
 
-<div class="jumbotron text-center" style="margin-bottom:0; background-color:#0089BA">
-    <p>Footer</p>
-</div>
+                <!-- Links -->
+                <h5 class="text-uppercase">Links used</h5>
 
+                <ul class="list-unstyled">
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">© 2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </body>
 </html>
