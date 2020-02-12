@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<div class="jumbotron jumbotron-fluid" style="margin-bottom:0; background-color:#2C73D2";>
+<div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
     <h1 class="display-4 JumboHeader">Assignment2: Functions</h1>
     <p class="lead">Chris Halikias IT 354 Spring 2020</p>
 </div>
@@ -30,7 +30,7 @@
             <a class="nav-item nav-link" href="#restPar">Rest Parameter</a>
             <a class="nav-item nav-link" href="#scope">Scope</a>
             <a class="nav-item nav-link" href="#nestFunc">Nested Function</a>
-            <a class="nav-item nav-link" href="#ECMA">History of EMCA</a>
+            <a class="nav-item nav-link" href="#ECMA">History of ECMA</a>
 
         </div>
     </div>
@@ -48,13 +48,13 @@
                 also take in variables, called arguements, and use them in their
                 calculations. We will talk about 3 particular ways you can code these functions. Then
                 we will discuss other topics related to functions such as Optional Arguments,
-                Rest Parameters, Scope, Nested Functions, and the history of EMCAScript
-                The first, is <b>Named Function.</b></p>
+                Rest Parameters, Scope, Nested Functions, and the history of EMCAScript.</p>
             <h2 id="ArticleText">Named Function</h2>
             <hr class="my-4">
             <p id="regText">The named function, is pretty self explanatory
             as it is a function with a name. They are not executed immediately
-            however, only when they are called like at the bottom of this example.</p>
+            however, only when they are called like at the bottom of this example.
+            If you don't call it by its name, then your code will skip the function.</p>
             <div class="text-center">
                 <img src="Image2/Named_Function.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
             </div>
@@ -70,9 +70,9 @@
             <h2 id="ArticleText">Function Expressions</h2>
             <hr class="my-3">
             <p id="regText">Next up are <b>Function Expressions,</b>which can be
-            stored as variable to be used at your leisure. This makes it easier
+            declared as a variable or constant to be used at your leisure. This makes it easier
             to store values produced by functions if you have to use them in other
-            functions</p>
+            functions or need to use the results for later use.</p>
             <div class="text-center">
                 <img src="Image2/FunctionExpression.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
             </div>
@@ -88,7 +88,9 @@
             <hr class="my-3">
             <p id="regText">The last function we are going to talk about is the <b>Arrow
             Function.</b> This allows us to write shorter function syntax wise.
-                Here are some examples below.</p>
+                The reason it is called the arrow function is for the <b>=></b>
+            that appears in the syntax. If you only have one statement in the function,
+            you can technically write it even shorter.</p>
             <div class="text-center">
                 <img src="Image2/ArrowFunction.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
             </div>
@@ -200,9 +202,17 @@
         <div class="col-sm-8 pt-sm-2 bg-dark text-light" id="ECMA">
             <h2 id="ArticleText">ECMAScript: A history</h2>
             <hr class="my-3">
-            <div class="text-center">
-            <p id="regText">ECMAScript is the scripting language that forms the basis of JavaScript. See JavaScript was developed for the browser Netscape 2 in 1996 by Brenden Eich, considered to be the father of JavaScript, who came into the picture when he was contracted by NetScape communications to create the first version of JavaScript. This is where ECMA comes in, ECMA is an industry association whose purpose is to standardize information and communication systems. ECMA began work on standardizing JavaScript in November of 1996, not even a year since the programming language came out. What was produced as a result is ECMAScript, which today is commonly known today as JavaScript. ECMAScript 1 and 2 still missed a lot of important features like JSON, exceptions and methods for builtin methods. Version 1 was released in June of 1997. Version 2 was released in June of 1998 and was mainly editorial changes. Version 3 had the first big changes, including regular expressions, the do-while block, the try/catch blocks, the in and instance of operators, and built-in functions for strings and arrays. This version was released in December of 1999. ECMAScript 4 was never released mainly because the committee couldn’t agree on whether or not to add much more features to the standard. In peak development, some of the features were classes, interfaces, and much, much more. ECMAScript 5, released in 2009, added JSON support, new array methods, and object methods. It was considered to be a rather modest update compared to version 3. Version 6, otherwise referred to as ECMAScript 2015, added the let and const, default parameter values, Array.find(), and Array.findIndex(). This version aimed to make JavaScript more appealing to a larger audience, so it could be used by small startups to industry giants alike. ECMAScript 7 (2016) contained mainly small revisions to the previous version and adding things like the exponentiation operator and Array.prototype.includes. It was the result of a new release process by the developers, where new proposals must go through a 4 stage process. So when enough proposals reach stage 4, a new version can be released and if they don’t reach stage 4, it doesn’t hinder development at all. Helping to prevent what happened to version 4. Since then, two new versions have been released, with the most recent being ECMAScript version 9 as of 2019.
+            <div>
+            <p id="regText">ECMAScript is the scripting language that forms the basis of JavaScript. See JavaScript was developed for the browser Netscape 2 in 1996 by Brenden Eich, considered to be the father of JavaScript, who came into the picture when he was contracted by NetScape communications to create the first version of JavaScript. The reason I bring up JavaScript is because the JavaScript we use today is actually a version of ECMAScript.
             </p>
+                <br>
+            <p id="regText">So now that you know the relation ECMAScript has to JavaScript, let's talk about what ECMA is. See ECMA is an industry association whose purpose is to standardize information and communication systems. In the beginning, ECMA began work on standardizing JavaScript in November of 1996, not even a year since the programming language came out. What was produced as a result is ECMAScript, which today is commonly known today as JavaScript. ECMAScript 1 and 2 still missed a lot of important features like JSON, exceptions and methods for builtin methods. Version 1 was released in June of 1997. Version 2 was released in June of 1998 and was mainly editorial changes. ECMAScript during this time was a far cry from what it is today, lacking many of the features it has today. However things were about to change drastically for this programming language.
+            </p>
+                <br>
+            <p id="regText">Version 3, released in December of 1999, had the first big changes, including regular expressions, the do-while block, the try/catch blocks, the in and instance of operators, and built-in functions for strings and arrays. This version was supported by all the major web browsers at the time, it’s influence spreading far and wide. However it was still mainly dealt with user interface and how they interact with the web. While the strides version 3 made were great, what followed was anything but. ECMAScript 4 was never released mainly because the committee couldn’t agree on whether or not to add much more features to the standard. While the ideas would be implemented in later versions, version 4 stretched itself too thin, and eventually collapsed on itself. This was not the downfall of EMCAScript though, as its next version would prove. ECMAScript 5, released in 2009, added JSON support, new array methods, and object methods. It was considered to be a rather modest update compared to version 3. However, it became one of the most supported versions of JavaScript, even to this day. It is important to note though, these changes required no syntax changes, the next version however would.
+            </p><br>
+            <p id="regText">Version 6, otherwise referred to as ECMAScript 2015, added the let and const, default parameter values, Array.find(), and Array.findIndex(). Some of the ideas for version 4 were rehashed in this version. While version 5 had no syntax changes, version 6 implemented them to push JavaScript further in its evolution. This version aimed to make JavaScript more appealing to a larger audience, so it could be used by small startups to industry giants alike. ECMAScript 7 (2016) contained mainly small revisions to the previous version and adding things like the exponentiation operator and Array.prototype.includes. It was the result of a new release process by the developers, where new proposals must go through a 4 stage process. So when enough proposals reach stage 4, a new version can be released and if they don’t reach stage 4, it doesn’t hinder development at all. Helping to prevent what happened to version 4. Since then, two new versions have been released, with the most recent being ECMAScript version 9. And that is a brief history of the language of JavaScript, but it's far from over.
+            </p><br>
             </div>
             <br>
         </div>
