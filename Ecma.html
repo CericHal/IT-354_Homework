@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Assignment2: Functions</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="Functions.html/#nameFunc">Named Function<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="Functions.html/#funcExp">Function Expression</a>
+            <a class="nav-item nav-link" href="Functions.html/#ArrowFunction">Arrow Function</a>
+            <a class="nav-item nav-link" href="Functions.html/#OpsArg">Optional Argument</a>
+            <a class="nav-item nav-link" href="Functions.html/#restPar">Rest Parameter</a>
+            <a class="nav-item nav-link" href="Functions.html/#scope">Scope</a>
+            <a class="nav-item nav-link" href="Functions.html/#nestFunc">Nested Function</a>
+            <a class="nav-item nav-link" href="Functions.html/#ECMA">History of ECMAScript</a>
+
+        </div>
+    </div>
+</nav>
+<div class="container bg-dark mt-5 mb-5 shadow rounded">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2 text-light" id="ECMA">
+            <h2 id="ArticleText">ECMAScript: A history</h2>
+            <hr class="my-3">
+            <div>
+                <p id="regText">ECMAScript is the scripting language that forms the basis of JavaScript. See JavaScript was developed for the browser Netscape 2 in 1996 by Brenden Eich, considered to be the father of JavaScript, who came into the picture when he was contracted by NetScape communications to create the first version of JavaScript. The reason I bring up JavaScript is because the JavaScript we use today is actually a version of ECMAScript.
+                </p>
+                <br>
+                <p id="regText">So now that you know the relation ECMAScript has to JavaScript, let's talk about what ECMA is. See ECMA is an industry association whose purpose is to standardize information and communication systems. In the beginning, ECMA began work on standardizing JavaScript in November of 1996, not even a year since the programming language came out. What was produced as a result is ECMAScript, which today is commonly known today as JavaScript. ECMAScript 1 and 2 still missed a lot of important features like JSON, exceptions and methods for builtin methods. Version 1 was released in June of 1997. Version 2 was released in June of 1998 and was mainly editorial changes. ECMAScript during this time was a far cry from what it is today, lacking many of the features it has today. However things were about to change drastically for this programming language.
+                </p>
+                <br>
+                <p id="regText">Version 3, released in December of 1999, had the first big changes, including regular expressions, the do-while block, the try/catch blocks, the in and instance of operators, and built-in functions for strings and arrays. This version was supported by all the major web browsers at the time, it’s influence spreading far and wide. However it was still mainly dealt with user interface and how they interact with the web. While the strides version 3 made were great, what followed was anything but. ECMAScript 4 was never released mainly because the committee couldn’t agree on whether or not to add much more features to the standard. While the ideas would be implemented in later versions, version 4 stretched itself too thin, and eventually collapsed on itself. This was not the downfall of EMCAScript though, as its next version would prove. ECMAScript 5, released in 2009, added JSON support, new array methods, and object methods. It was considered to be a rather modest update compared to version 3. However, it became one of the most supported versions of JavaScript, even to this day. It is important to note though, these changes required no syntax changes, the next version however would.
+                </p><br>
+                <p id="regText">Version 6, otherwise referred to as ECMAScript 2015, added the let and const, default parameter values, Array.find(), and Array.findIndex(). Some of the ideas for version 4 were rehashed in this version. While version 5 had no syntax changes, version 6 implemented them to push JavaScript further in its evolution. This version aimed to make JavaScript more appealing to a larger audience, so it could be used by small startups to industry giants alike. ECMAScript 7 (2016) contained mainly small revisions to the previous version and adding things like the exponentiation operator and Array.prototype.includes. It was the result of a new release process by the developers, where new proposals must go through a 4 stage process. So when enough proposals reach stage 4, a new version can be released and if they don’t reach stage 4, it doesn’t hinder development at all. Helping to prevent what happened to version 4. Since then, two new versions have been released, with the most recent being ECMAScript version 9. And that is a brief history of the language of JavaScript, but it's far from over.
+                </p><br>
+                <br>
+                <p id="regText">Sources used</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://auth0.com/blog/a-brief-history-of-javascript/#ECMAScript--JavaScript-as-a-standard" class="text-light">
+                            Auth0.com
+                        </a>
+                    </li>
+                    <li>
+                        <p><a href="https://www.w3schools.com/js/js_versions.asp" class="text-light">W3Schools.com</a></p>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Chris Halikias</h5>
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Values.html" class="text-light">Assignment1</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Functions.html" class="text-light">Assignment2</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links used</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://auth0.com/blog/a-brief-history-of-javascript/#ECMAScript--JavaScript-as-a-standard" class="text-light">
+                            Auth0.com
+                        </a>
+                    </li>
+                    <li>
+                        <p><a href="https://www.w3schools.com/js/js_versions.asp" class="text-light">W3Schools.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">© 2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

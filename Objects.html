@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Module 3: Objects</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#create">Creating Objects</a>
+            <a class="nav-item nav-link" href="#bracket">Object bracket</a>
+            <a class="nav-item nav-link active" href="#literal">Object literal</a>
+            <a class="nav-item nav-link active" href="#constructor">Object constructor</a>
+            <a class="nav-item nav-link active" href="#objClass">Object class</a>
+            <a class="nav-item nav-link active" href="Usability.html">Usability Articles and advice.</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container AlternateColor mt-5 mb-5 shadow rounded">
+    <br>
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8" id="create">
+            <h2 id="ArticleText">Creating an Object</h2>
+            <hr class="my-3">
+            <p id="regText">So how do we create an Object? Well simply put, one can
+            it is like any variable only after the equal sign you enter the keyword
+            new and then the keyword Object followed by parentheses. You can then
+            add properties to the object by entering the object followed by a period
+            then the name of the property and its value.</p>
+            <p id="regText"> Here is a basic example of creating a object below.</p>
+            <div class="text-center">
+                <img src="Image3/objectCreate.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="bracket">
+            <h2 id="ArticleText">Object creation: Bracket notation</h2>
+            <hr class="my-3">
+            <p id="regText">Through bracket notation, we can also access the properties
+            in and objects, in addition to setting their values. They function similarly
+            as the code above, but the syntax is different. With the property name
+            in quotes within the bracket. Take a look below.</p>
+            <div class="text-center">
+                <img src="Image3/objectBracket.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="literal">
+            <h2 id="ArticleText">Object creation: literally</h2>
+            <hr class="my-3">
+            <p id="regText">Another way to create and an object is to literally
+            code hard code it. Instead of typing new object, enter the properties
+            followed by colons and their values, and separated by commas. Take a look
+            below.</p>
+            <div class="text-center">
+                <img src="Image3/objectLiteral.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="constructor">
+            <h2 id="ArticleText">Object creation: constructors</h2>
+            <hr class="my-3">
+            <p id="regText">Of course another way you can create objects with
+            a constructor, which is basically a function. Similar to what
+            Java and other programming languages, but still a little different.
+            Here we use a named function to set up the skeleton of the object
+            and a function call to give the values to the property. Also notice
+            that you have to use the new keyword for the function call. Look
+            at the example below.</p>
+            <div class="text-center">
+                <img src="Image3/Constructor.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="objClass">
+            <h2 id="ArticleText">Object creation: classes</h2>
+            <hr class="my-3">
+            <p id="regText">Lastly one can use classes in JavaScript to create
+            an object. Like constructors, this method is also used in other
+            programming languages although it is also slightly different.
+            In JavaScript, classes are basically a special kind
+            of function and the object is an instance of that class/function.
+                You see classes need constructors in them to set the values
+                that you give them. Unlike the function above you need the
+                constructor keyword before the parameters.
+            Here is an example below.</p>
+            <div class="text-center">
+                <img src="Image3/ObjectClass.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+            </div>
+            <br>
+            <h2 id="ArticleText">Object Tutorial</h2>
+            <hr class="my-3">
+            <div class="iframe-container text-center">
+                <iframe src="https://youtube.com/embed/Mm_NIZO7LzQ" allowfullscreen></iframe>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Chris Halikias</h5>
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Values.html" class="text-light">Assignment1</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Functions.html" class="text-light">Assignment2</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links used</h5>
+
+                <ul class="list-unstyled">
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">©2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
