@@ -3,7 +3,12 @@
     font-style: normal;
     font-size: 1.5em;
 }
-#ArticleText {font-family: Neuton;
+p {font-family: Lustria;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;}
+
+h2 {font-family: Neuton;
     font-weight: 800;
     font-style: normal;
     font-size: 2em;

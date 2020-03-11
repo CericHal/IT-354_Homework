@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Article 3: Monolithic vs Microservices</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        </div>
+    </div>
+</nav>
+<div class="container bg-dark mt-5 mb-5 shadow rounded">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2 text-light" id="ECMA">
+            <h2 id="ArticleText">Monolithic vs Micro services</h2>
+            <hr class="my-3">
+            <div>
+                <p id="regText">So what are monolithic and microservices and what do they have to do with technology? Well they are both application architectures that have various costs and benefits associated with it. Monolithic is considered the more traditional approach however microservices is a new architecture which is being used a lot more in modern day. Hopefully by the end of this article you will know which architecture is best suited under certain circumstances.
+                </p>
+                <br>
+                <p id="regText">Monolithic architecture has been the original way applications have been developed where it is built as a singular unit. They have one large base of code that is comprised of all the functions within one spot. This makes it easier to debug and test since all the code is in one place. Usually this structure is used for simple apps because it is simple to develop because most engineering teams know how and are capable of building applications with the monolithic approach. Also there is reduced cross-cutting concerns which affect the entire application since the functionality is all in one area. While monolithic is simple to develop, when it gets scaled up it becomes very complex and hard to understand. Speaking of scalability, since you can't scale parts of the code independently, you have to scale up the whole application which is just too much work. Since everything is all together it is also hard to change the application after deploying it because changing anything in the application affects the whole application. Another flaw is that new technology can’t really be implemented into a monolithic application easily.
+                </p>
+                <br>
+                <p id="regText">Microservices architecture is the exact opposite of monolithic architecture where the parts of the application are developed independently from each other as small units. These parts communicate through API’s (Application Programming Interface) or other lightweight mechanisms. This architectures strong points are its independent components that can be deployed or updated independently. Since the code is split up and not all together in one place it's also easier to understand as well as scale up which is more time efficient than with the monolithic style. Unlike monolithic architecture, microservices can implement whichever technology they want for each part of the application. As stated before, changes can be implemented easier and faster with this architecture so that makes it a more agile architecture. Microservice is not without flaws however, for example it is more complex since it is a distributed system and one must set up all the connections between the database and modules of the application and they have to be managed carefully. Testing is not easier either, since the components are independently deployable and that makes finding a solution that much harder. So with everything said who is the winner between monolithic and microservices architectures?
+                </p>
+                <br>
+                <p id="regText">Now neither of these architectures are better than the other, rather its what software architecture fits your business and solutions better. Microservices might be more popular, it is not the universal solution for applications. When building a simple application, you need to deploy your application quickly, you have a small team and your team just has little expertise with microservices, then monolithic architecture would be the better choice. When you want an application that can be scaled up, a team with microservices expertise, and also enough engineering skills since you will be having multiple teams responsible for multiple services for a project, and there needs to be enough resources available to handle all of the processes needed for the project. Applications which will grow into something more complex and grand will benefit more under the microservice structure. Microservices and monolithic software architecture both have their strengths and weaknesses and hopefully this article has helped you figure out which is which.
+                </p>
+                <br>
+                <br>
+                <p id="regText">Source used</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.n-ix.com/microservices-vs-monolith-which-architecture-best-choice-your-business/" class="text-light">
+                            www.n-ix.com
+                        </a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Chris Halikias</h5>
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Values.html" class="text-light">Assignment1</a></p>
+                    </li>
+                    <li>
+                        <p><a href="Functions.html" class="text-light">Assignment2</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links used</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://auth0.com/blog/a-brief-history-of-javascript/#ECMAScript--JavaScript-as-a-standard" class="text-light">
+                            Auth0.com
+                        </a>
+                    </li>
+                    <li>
+                        <p><a href="https://www.w3schools.com/js/js_versions.asp" class="text-light">W3Schools.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">© 2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
