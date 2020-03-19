@@ -25,8 +25,9 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="#inheritAttribute">Inherit Attributes</a>
             <a class="nav-item nav-link" href="#functionInherit">Inherit Function</a>
-            <a class="nav-item nav-link active" href="#thisInheritance">This in inheritance</a>
-            <a class="nav-item nav-link active" href="#thisKeyword">This in global and window Object</a>
+            <a class="nav-item nav-link" href="#thisInheritance">This in scope</a>
+            <a class="nav-item nav-link" href="#extension">Class Extensions</a>
+            <a class="nav-item nav-link" href="#thisKeyword">This in global and window Object</a>
         </div>
     </div>
 </nav>
@@ -111,7 +112,7 @@
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 pt-sm-2" id="thisKeyword">
-            <h2 id="ArticleText">This keyword</h2>
+            <h2 id="ArticleText">'This' in the Global and Window Object</h2>
             <hr class="my-3">
             <p id="regText">We have seen the 'this' keyword in action with previous
                 examples of code, but what exactly does it do?
@@ -120,22 +121,22 @@
             refers to the object that the property belongs to. When not in the
             scope of a class or function, this refers to the global object.</p>
             <br>
-            <p>The global object basically refers to the script or file itself. The window
-                object is basically the global object but it is created when running
-                a script in a web browser. All global functions and variables become
-                part of the window object.
-            Try not to use these objects when you can, since the values exist for
-            the lifetime of the application. Meaning they will take up unnecessary
-                space in your application. So
-            keep that in mind when working with the window object.</p>
+            <p>So what about the Global and Window Objects? What are they?
+            To keep things simple, they are basically the same thing, BUT have
+            a few key differences. The Global object is an object that always exists in the
+                global scope (the file or script that code is on). In JavaScript there is
+                <b>always</b> a global object defined. The Window object is the Global
+                objects equivalent when running code through a browser. All Global functions
+            and variables then become part of the Window object. Below is a code example
+            of how access Window object variables and functions.</p>
             <div class="text-center">
-                <img src="Image3/ObjectClass.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
+                <img src="Image4/WindowOBJ.PNG" alt="hoisting" class="img-fluid mb-sm-3 border border-dark">
             </div>
             <br>
-            <h2 id="ArticleText">Prototypical inheritance</h2>
+            <h2 id="inheritVid">Inheritance Video tutorial</h2>
             <hr class="my-3">
             <div class="iframe-container text-center">
-                <iframe src="https://youtube.com/embed/Mm_NIZO7LzQ" allowfullscreen></iframe>
+                <iframe src="https://youtube.com/embed/FxJ8HhbLnlk" allowfullscreen></iframe>
             </div>
             <br>
         </div>
@@ -150,7 +151,7 @@
             <!-- Grid column -->
             <div class="col-md-6 mt-md-0 mt-3">
                 <!-- Content -->
-                <h5 class="text-uppercase">Chris Halikias</h5>
+                <h4 class="text-uppercase">Chris Halikias</h4>
                 <p>Please code responsibly</p>
             </div>
             <!-- Grid column -->
@@ -158,16 +159,25 @@
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
                 <!-- Links -->
-                <h5 class="text-uppercase">Menu</h5>
+                <h4 class="text-uppercase">Menu</h4>
                 <ul class="list-unstyled">
                     <li>
                         <p><a href="index.html" class="text-light">Home</a></p>
                     </li>
                     <li>
-                        <p><a href="Values.html" class="text-light">Assignment1</a></p>
+                        <p><a class="text-light" href="#inheritAttribute">Inherit Attributes</a></p>
                     </li>
                     <li>
-                        <p><a href="Functions.html" class="text-light">Assignment2</a></p>
+                        <p><a class="text-light" href="#functionInherit">Inherit Function</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#thisInheritance">This in scope</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#extension">Class Extensions</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#thisKeyword">This in global and window Object</a></p>
                     </li>
                 </ul>
             </div>
@@ -176,7 +186,7 @@
             <div class="col-md-3 mb-md-0 mb-3">
 
                 <!-- Links -->
-                <h5 class="text-uppercase">Links used</h5>
+                <h4 class="text-uppercase">Links used</h4>
 
                 <ul class="list-unstyled">
                 </ul>
