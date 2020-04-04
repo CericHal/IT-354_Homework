@@ -1,12 +1,23 @@
 /* The sidebar menu */
+h1 {
+    font-family: Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-style: normal;
+    font-weight: 700;
+}
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../ImageIndex/wavebackground.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 20%; /* Set the width of the sidebar */
+    width: 300px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: #2f303a; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }
@@ -16,23 +27,30 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
+    border-bottom-color: #818181;
+    border-top-color: #818181;
 }
 
 .sidenav hr{background-color:#818181;
     height: 1px
 }
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    background: #f1f1f1;
-}
+
 
 /* Style page content */
 .main {
-    margin-left: 20%; /* Same as the width of the sidebar */
-}
+    margin-left: 300px; /* Same as the width of the sidebar */
 
+}
+.smNav{display: none}
+@media screen and (max-width: 992px){
+    .sidenav{display: none}
+    .main{margin-left: 0px}
+    .smNav{display: block}
+    .container
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

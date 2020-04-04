@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Assigment 1</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
 </head>
 <body class="AlternateColor">
 <div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
-    <h1 class="display-4 JumboHeader">Module 1: Unary Operators</h1>
+    <h1 class="display-4 JumboHeader">Module1: Hoisting</h1>
     <p class="lead">Chris Halikias IT 354 Spring 2020</p>
 </div>
 
@@ -25,8 +25,8 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="Values.html">Value and Types<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link active" href="UnaryOps.html">Unary Operators</a>
-            <a class="nav-item nav-link" href="Hoisting.html">Hoisting</a>
+            <a class="nav-item nav-link" href="UnaryOps.html">Unary Operators</a>
+            <a class="nav-item nav-link active" href="Hoisting.html">Hoisting</a>
         </div>
     </div>
 </nav>
@@ -35,62 +35,47 @@
     <br>
     <div class="row">
         <div class="col-sm-2">
+
         </div>
-        <div class="col-sm-8 pt-sm-1">
-            <h2 id="ArticleText">Unary Operators</h2>
+        <div class="col-sm-8">
+            <h2 id="ArticleText">Hoisting</h2>
             <hr class="my-3">
-            <p id="regText">Unary Operators takes a single operand/arguement
-                and performs an operation. We have the unary plus (+)
-            which tries to convert the operand into a number. The unary
-            Negation (-) tries to convert the operand into a number and
-            negates after. Logical not (!) converts to a boolean value then
-            negates it. Increment (++) and decrement (--) adds and subtracts
-            one from the operand. Then there is the typeof which gives
-            the data type of the operand and delete which removes the
-            variable</p>
-            <p id="regText">Here are some examples of the <b>Unary plus (+):</b></p>
+            <p id="regText">In JavaScript a variable can be declared after it has been used.
+            This concept is known as hoisting which is JavaScripts default
+                behavior of moving all declarations to the top of the current
+            scope (in other words to the top of the current script or the
+                current function).</p>
+            <p id="regText"> Here is a basic example of hoisting with the output being
+            on the right.</p>
             <div class="text-center">
-                <img src="Images/UnaryOps1.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
-            </div>
-            <p id="regText">Here are examples for <b>Unary negation (-):</b></p>
-            <div class="text-center">
-                <img src="Images/UnaryOps2.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
-            </div>
-            <p id="regText">Here are examples for <b>Loigical Not (!):</b></p>
-            <div class="text-center">
-                <img src="Images/UnaryOp3.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
-            </div>
-            <p id="regText">Here are examples for <b>Increments (++):</b></p>
-            <div class="text-center">
-                <img src="Images/UnaryOp4.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
-            </div>
-            <p id="regText">Here are examples for <b>Decrements (--):</b></p>
-            <div class="text-center">
-                <img src="Images/UnaryOps5.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
-            </div>
-            <p id="regText">Here are some examples of the <b>typeof Unary Operator</b> which helps with
-            debugging or working with data that changes. Its used before the operand
-            and returns the data type of the operand.</p>
-            <div class="text-center">
-                <img src="Images/UnaryOps6.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
-            </div>
-            <p id="regText">Here are some examples of the <b>delete Unary Operator</b> which can delete a
-            variable, item in a array, functions and objects. It does return true
-                if the item is already deleted or does not exist.</p>
-            <div class="text-center">
-                <img src="Images/UnaryOps7.PNG" class="img-fluid mb-sm-3 border border-dark" alt="Responsive image">
+                <img src="../Images/Pic1_hoist.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
             </div>
             <br>
-            <h2 id="UnaryOpsVideo">Unary Operators Tutorial Video</h2>
+            <p id="regText">Another thing to note about Hoisting is that it does not work
+            with variables declared with the key words let or const are not
+            hoisted. However JavaScript only hoists declarations and not
+            initializations. The next two examples show this difference.</p>
+            <div class="text-center">
+                <img src="../Images/Pic2_hoist.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+                <img src="../Images/Pic3_hoist.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
+            <p id="regText">As you can see hoisting does not work in the third picture
+            because of the positions of the initialization of the variables.
+            Because the declaration (vary y) and not the initialization (=7)
+            gets put up on top. Since y is initialized and cannot be hoisted,
+            it is undefined. Hoisting is often overlooked behavior in JavaScript
+            by developers. To avoid the bugs that come from hoisting one should
+            always declare variables at the beginning of every scope.</p>
+            <br>
+            <h2 id="hoistVideo">Hoisting video tutorial</h2>
             <hr class="my-3">
             <div class="iframe-container text-center">
-                <iframe src="https://youtube.com/embed/F17Lro1KpOk" allowfullscreen></iframe>
+                <iframe src="https://youtube.com/embed/0w7QSmO_Y5k" allowfullscreen></iframe>
             </div>
             <br>
             <br>
         </div>
-        <div class="col-sm-2">
-        </div>
+        <div class="col-sm-2"></div>
     </div>
 </div>
 <footer class="page-footer font-small info-color pt-4 ">
@@ -102,7 +87,7 @@
             <div class="col-md-6 mt-md-0 mt-3">
                 <!-- Content -->
                 <h5 class="text-uppercase">Chris Halikias</h5>
-                <p>Please code responsibly. All pictures </p>
+                <p>Please code responsibly</p>
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none pb-3">
@@ -133,11 +118,6 @@
                 <h5 class="text-uppercase">Links used</h5>
 
                 <ul class="list-unstyled">
-                    <li>
-                        <a href="https://scotch.io/tutorials/javascript-unary-operators-simple-and-useful" class="text-light">
-                            All pictures on this page are from scotch.io
-                        </a>
-                    </li>
                 </ul>
             </div>
             <!-- Grid column -->
@@ -151,6 +131,5 @@
     <!-- Copyright -->
 </footer>
 <!-- Footer -->
-
 </body>
 </html>

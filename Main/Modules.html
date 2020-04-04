@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modules</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body class="AlternateColor">
+<div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Module 5: JavaScript Modules</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#m1">Modules Overview</a>
+            <a class="nav-item nav-link" href="#m2">Module Patterns</a>
+            <a class="nav-item nav-link" href="#m3">ES6 Modules</a>
+            <a class="nav-item nav-link" href="#m3">Module Bundling</a>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container bg-light mt-5 mb-5 shadow rounded">
+    <br>
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+            <h2 id="m1">Modules</h2>
+            <hr class="my-3">
+            <p>JavaScript Module's are clusters of code that are self-contained and have specific functions that they serve.
+            Their basic purpose is to make code more easy to maintain and update without effecting the rest of the
+            application.</p>
+            <h2 id="m2">Module Pattern</h2>
+            <hr class="my-3">
+            <p>A Module pattern is one of the various ways to implement modules in your code.
+            It works in a similar way to how classes work in other languages, since JavaScript classes aren't supported
+            natively. This way one can store private and public functions and variables in a single object.
+            Here are some examples of Module Patterns.</p>
+            <p>Example 1: Anonymous Closure</p>
+            <div class="text-center">
+                <img src="../Image5/anonClosure.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
+            <p>Example 2: Object interface</p>
+            <div class="text-center">
+                <img src="../Image5/ObjectInterface.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
+            <br>
+            <p>Example 3: Revealing module Pattern</p>
+            <div class="text-center">
+                <img src="../Image5/ModuleReveal.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
+            <br>
+            <h2 id="m3">Native JS/ES6 modules</h2>
+            <hr class="my-3">
+            <p>There are numerous ways for modules to be implemented in JavaScript.
+            However, this one is important as it is built into JavaScript rather than emulating a module system.
+            The syntax is much more simple. This is the newest method of incorporating modules
+            into your code and with its rising popularity it is definitely something you want to learn how to
+            do. Here is an example below, with one module exporting a class it contains, and another importing it
+            and using it to declare a new instance of the User class and then using the functions to display the info
+            in the main.js file.</p>
+            <div class="text-center">
+                <img src="../Image5/NativeJS.PNG" class="img-fluid mb-sm-3 border border-dark" alt="hoisting">
+            </div>
+            <br>
+            <br>
+            <h2 id="m4">Module Bundling</h2>
+            <hr class="my-3">
+            <p>Now one might ask, what is module bundling, simply put its a way of grouping together
+            modules into and single or multiple files. In an HTML file, one has to attach JavaScript
+            through the script tag, which would slow down the loading times for pages. So combining
+            modules into single or few files is done to avoid this. When using module patterns,
+            to bundle them you will want to concatenate them into a single file and/or minify the code
+            by removing unnecessary characters from the bundled code to reduce space.</p>
+
+            <p>Bundling code for ES6 modules is a little more complex. For example using a transpiler,
+            Babel for example, that converts ES6 code to CommonJS, AMD, or UMD format (these are
+            other methods of incorporating modules.)</p>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2" id="moduleVid">
+            <h2 id="ArticleText">Module Video Tutorial</h2>
+            <hr class="my-3">
+            <p >Follow along as I explain how a ES6 module works. (Author's note: At
+            the top of index.js, following the import keyword, the J represents the imported class Jedi
+            from user.js).</p>
+            <div class="iframe-container text-center">
+                <iframe src="https://youtube.com/embed/df0USaiPBu4" allowfullscreen></iframe>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h4 class="text-uppercase">Chris Halikias</h4>
+
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h4 class="text-uppercase">Menu</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#m1">Modules Overview</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#m2">Module Patterns</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#m3">ES6 Modules</a></p>
+                    </li>
+                    <li>
+                        <p><a class="text-light" href="#m3">Module Bundling</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h4 class="text-uppercase">Links used</h4>
+
+                <ul class="list-unstyled">
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">©2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>HomePage</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -14,29 +14,40 @@
 </head>
 <body>
 <!-- Side navigation -->
-<div class="sidenav">
+<div class="sidenav text-center">
+    <img href="..">
     <a href="index.html">Home</a>
-    <hr class="my-4" style="background-color:#818181;">
     <a href="#tutorial">Tutorials</a>
-    <hr class="my-4" style="background-color:#818181;">
     <a href="#article">Articles</a>
 </div>
 
 <!-- Page content -->
 <div class="main">
-    <div class="jumbotron jumbotron-fluid AlternateColor2 pl-sm-5">
-        <div class="container">
-            <h1 class="display-4 JumboHeader">Home</h1>
-            <p class="lead">Welcome to the homepage of my website, here you will learn
-            Javascript concepts step by step through tutorials I have created.
-            </p>
-        </div>
+    <div class="jumbotron pl-sm-5 mb-0">
+        <h1 class="display-4  text-light">Home</h1>
+        <p class="text-light">Welcome to the homepage of my website, here you will learn
+        Javascript concepts step by step through tutorials I have created.
+        </p>
     </div>
-    <div class="container AlternateColor pb-3">
+    <div class="smNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Homepage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#tutorial">Tutorials</a>
+                    <a class="nav-item nav-link active" href="#article">Articles</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid pb-3 mt-5">
         <div class="text-center"><h2 id="tutorial">Tutorials</h2></div>
         <div class="row mb-3 mt-3">
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Values & Types</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 1</h6>
@@ -45,8 +56,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Unary Operators</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 1</h6>
@@ -55,8 +66,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                     <h5 class="card-title">Hoisting</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Module 1</h6>
@@ -69,8 +80,8 @@
 
         </div>
         <div class="row mb-3">
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Functions</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 2</h6>
@@ -79,8 +90,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Objects</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 3</h6>
@@ -89,8 +100,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Object Inheritance</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 4</h6>
@@ -100,35 +111,69 @@
                 </div>
             </div>
         </div>
+        <div class="row mb-3">
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Modules</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Module 5</h6>
+                        <p class="card-text">Learn about what modules are and different ways to implement them.</p>
+                        <a href="Modules.html" class="card-link">Tutorial</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Higher Order Functions and array methods</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Module 5</h6>
+                        <p class="card-text">Learn what higher order functions are, and advanced array methods.</p>
+                        <a href="HigherOrderFunctions.html" class="card-link">Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="text-center"><h2 id="article">Articles</h2></div>
         <div class="row mb-3 mt-3">
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">History of ECMAScript</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 2</h6>
                         <p class="card-text">Learn the history of how JavaScript was standardized and the features of each iteration.</p>
-                        <a href="Ecma.html" class="card-link">Tutorial</a>
+                        <a href="Ecma.html" class="card-link">Article Link</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Usability</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 3</h6>
                         <p class="card-text">Learn how to create a responsive website as well as advice on how to improve usability.</p>
-                        <a href="Usability.html" class="card-link">Tutorial</a>
+                        <a href="Usability.html" class="card-link">Article Link</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Monolithic vs. Microservices</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Module 4</h6>
                         <p class="card-text">Learn the advantages and disadvantages of Monolithic and Micro-services software architecture.</p>
-                        <a href="MonoVMicro.html" class="card-link">Tutorial</a>
+                        <a href="MonoVMicro.html" class="card-link">Article Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">The Font Problem</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Module 5</h6>
+                        <p class="card-text">Learn how using multiple fonts on a web-page can have disastrous consequences</p>
+                        <a href="Article4.html" class="card-link">Article Link</a>
                     </div>
                 </div>
             </div>
