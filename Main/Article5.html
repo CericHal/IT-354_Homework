@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Node and V8</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </head>
-<body>
-$END$
+<body class="AlternateColor">
+<div class="jumbotron jumbotron-fluid pl-sm-5" style="margin-bottom:0; background-color:#2C73D2";>
+    <h1 class="display-4 JumboHeader">Node and the V8 JavaScript Engine.</h1>
+    <p class="lead">Chris Halikias IT 354 Spring 2020</p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+
+        </div>
+    </div>
+</nav>
+<div class="container bg-dark mt-5 mb-5 shadow rounded">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 pt-sm-2 text-light">
+            <h2 id="ArticleText">Node and V8</h2>
+            <p>Link to Article <a href="https://www.zachleat.com/web/mitt-romney-webfont-problem/">here.</a></p>
+            <hr class="my-3">
+            <div>
+                <p>Node.js is an open source JavaScript runtime environment that is built upon the V8 JavaScript. Node.js was launched in 2009 with the purpose of allowing developers to create more server-side applications through JavaScript by running code through the computer process instead of a web browser.
+                </p>
+                <br>
+                <p>V8 is an open source JavaScript engine that powers Node.js and since then has been an integral part of web development. It takes in JavaScript code, but as it's running it translates JavaScript into machine code allowing for very fast execution.Today it is used in Google Chrome and provides the environment where our JavaScript code executes in the browser. Other browsers use different JS engines, but in this article we are focusing on the V8 engine specifically. V8 was coded in C++, and since its release it has been constantly updated and is available for multiple operating systems including Windows, Mac, and Linux. So now that you know what the V8 engine is, here is a brief look at how it came to be.
+                </p>
+                <br>
+                <p>So now that we know what the V8 engine is, let's take a look at a brief history of the JS engine. It was developed by the Chromium Project for google Chrome. It was released back in September 2, 2008 along with the first version of Chrome and was based on the Strongtalk assembler. Fast forward a couple years, a new compiler infrastructure was introduced to V8 called Crankshaft, which improved speed for compiling code. Come 2016, the ignition interpreter was added to V8, aiming to reduce memory use on Android phones with small memory. In 2017 V8’s compiler infrastructure was drastically changed in version 5.9 where V8’s compilers, Full-codegen and Crankshaft no longer compiled JavaScript in V8 since they couldn’t keep pace with technical advancements. Today V8 is currently on version 8.1.
+                </p>
+                <br>
+                <p>Now you might be wondering how Node.js and the V8 JS engine are related to each other. See V8 engine can be run outside of the browser through Node.js, allowing the user to write and run JavaScript code without having to rely on the browser. Basically Node.js provides an environment for developers to display their code’s input and output, and V8 is the one doing the compiling the JavaScript code.
+                </p>
+                <br>
+                <p>Personally, as a developer I always assumed JavaScript was capable of server-side development and it never occured to me that Node.js helped change how JavaScript as a language is used today. JavaScript is a single thread language, meaning only one thing can happen at a time, yet Node.js is built to handle asynchronous code to accomplish more in less time. Node uses an event driven model, so that way it allows the code to flow easier and faster, and it reduces the input/output backup in the code.In addition to that, the fact that V8 was designed to run JavaScript in chrome yet is also independent from the browser it is run on is also fascinating. These are just a few things I find fascinating about Node.js and the V8 engine and hopefully you found something interesting here too.
+                </p>
+                <br>
+                <p id="regText">Sources used</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://nodejs.dev/the-v8-javascript-engine">
+                            V8 JavaScript Engine
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e">
+                            How JavaScript works: inside the V8 engine</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/V8_(JavaScript_engine)">
+                            Wikipedia.org V8 JS engine
+                        </a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small info-color pt-4 ">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left text-light">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">Chris Halikias</h5>
+                <p>Please code responsibly</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="index.html" class="text-light">Home</a></p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links used</h5>
+
+                <ul class="list-unstyled">
+
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light info-color-dark">© 2020 Copyright: Chris Halikias
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </body>
-</html>
+</html></html>
